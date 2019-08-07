@@ -38,6 +38,24 @@ collections:
       badge: "/uploads/badge--getting-started.svg"
       in_nav: true
     position: 10
+  consulting:
+    title: Consulting
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: Introduce yourself to Siteleaf and Jekyll
+      badge: "/uploads/badge--getting-started.svg"
+      in_nav: true
+    position: 10
+  about:
+    title: About
+    output: true
+    permalink: "/:collection/:path/"
+    meta:
+      description: Introduce yourself to Siteleaf and Jekyll
+      badge: "/uploads/badge--getting-started.svg"
+      in_nav: true
+    position: 10
   v1:
     title: Legacy Sites
     output: true
@@ -129,6 +147,6 @@ gems:
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-redirect-from
-logo: "/assets/images/logo.svg"
+logo: "/assets/images/sarah.estetica.jpg"
 description: Documentation and learning resource for Siteleaf, a content management
   system designed for a better web.
