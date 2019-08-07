@@ -147,6 +147,6 @@ gems:
 - jekyll-sitemap
 - jekyll-seo-tag
 - jekyll-redirect-from
-logo: "/assets/images/sarah.estetica.jpg"
+logo: "../assets/images/sarah.estetica.jpg"
 description: Documentation and learning resource for Siteleaf, a content management
   system designed for a better web.
