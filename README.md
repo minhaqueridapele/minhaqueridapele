@@ -1,35 +1,32 @@
-# Learn Siteleaf
+Freelancer Jekyll theme  [![Build Status](https://api.travis-ci.org/jeromelachaud/freelancer-theme.svg?branch=master)](https://travis-ci.org/jeromelachaud/freelancer-theme/) 
+=========================
 
-Learn Siteleaf is a documentation and learning resource for [Siteleaf](https://www.siteleaf.com).
+Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
 
-_Please note that this is only for [version 2](https://www.siteleaf.com) of Siteleaf. For v1 documentation, please see the [v1 help site](http://v1.siteleaf.com)._
+## How to use
+ - Place a image in `/img/portfolio/`
+ - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
+ - Create posts to display your projects. Use the follow as an example:
+```txt
+---
+layout: default
+modal-id: 1
+date: 2014-07-18
+img: cabin.png
+alt: image-alt
+project-date: July 2014
+client: The Client
+category: Web Development
+description: The description of the project
 
-## Installation
-
-All dependencies are installed with [Bundler](http://rubygems.org/gems/bundler):
-
+---
 ```
-bundle install
-```
 
-## Local development
+## Demo
+View this jekyll theme in action [here](https://jeromelachaud.github.io/freelancer-theme)
 
-To run a local development server, run:
+## Screenshot
+![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
 
-```
-bundle exec jekyll serve
-```
-
-Now you can go ahead and check out the site at [localhost:4000](http://localhost:4000).
-
-## Contributing
-
-To help us improve the site:
-
-1. Fork it
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Commit your changes (git commit -am 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
-5. Create new Pull Request
-
-For tips on formatting, check out the [Style Guide](https://learn.siteleaf.com/style/).
+---------
+For more details, read the [documentation](http://jekyllrb.com/)

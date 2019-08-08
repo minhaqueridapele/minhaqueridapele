@@ -1,47 +1,15 @@
-{% if page.layout == 'page' %}
-  {% assign section = site.collections | where: 'label', page.collection | first %}
-  {% assign title = section.title %}
-{% elsif page.header_title %}
-  {% assign title = page.header_title %}
-{% endif %}
-<div class="headerWrap bg--{{ page.color | default: 'dark-gray' }}">
-  <header class="header{% if page.extended_header %} header--extended{% endif %}">
-    <ul class="header__items">
-      <li class="header__item">
-        <a href="{{ site.baseurl }}/consulting/" class="header__link">Consultoria</a>
-      </li>
-      <li class="header__item">
-        <a href="{{ site.baseurl }}/about/" class="header__link">Sobre</a>
-      </li>
-      <li class="header__item">
-        <a href="{{ site.baseurl }}" class="header__link header__link--button">Início</a>
-      </li>
-      <li class="header__item header__item--mobile">
-        <a id="mobileNavOpen" class="header__link">Menu</a>
-      </li>
-    </ul>
-    <a href="/" class="header__home"><img src="{{ site.baseurl }}{{ site.logo }}" class="header__logo" alt="{{ site.title }}" /></a>
-    <h1 class="header__title">{{ title | default: page.title }}</h1>
-    {% if page.subtitle %}<div class="header__subtitle">{{ page.subtitle | markdownify }}</div>{% endif %}
-  </header>
-  <nav class="mobileNav">
-    <header class="header">
-      <ul class="header__items">
-        <li class="header__item header__item--mobile">
-          <a id="mobileNavClose" class="header__link">Close</a>
-        </li>
-      </ul>
-      <ul class="mobileNav__items">
-        <li class="mobileNav__item">
-          <a href="{{ site.baseurl }}/consulting/" class="mobileNav__link">Consultoria</a>
-        </li>
-        <li class="mobileNav__item">
-          <a href="{{ site.baseurl }}/about/" class="mobileNav__link">Sobre</a>
-        </li>
-        <li class="mobileNav__item">
-          <a href="{{ site.baseurl }}" class="mobileNav__link">Início</a>
-        </li>
-      </ul>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">{{ site.title }}</span>
+                        <hr class="star-light">
+                        <span class="skills">{{ site.skills }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-  </nav>
-</div>
